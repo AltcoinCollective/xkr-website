@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { logo } from '../images/logo-black.png'
+
 import {
     Box,
     Flex,
@@ -57,7 +57,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              Logo
+              Kryptokrona
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
