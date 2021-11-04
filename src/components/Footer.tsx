@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { ReactNode } from 'react';
+import { Button } from '@chakra-ui/button';
 import {
   Box,
   Container,
@@ -56,9 +57,9 @@ const SocialButton = ({
 export default function Footer() {
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
+
       color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW={'6xl'} py={10}>
+      <Container as={Stack} maxW="7xl" paddingTop="10rem">
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
@@ -76,11 +77,9 @@ export default function Footer() {
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Legal</ListHeader>
-            <Link href={'#'}>Cookies Policy</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Law Enforcement</Link>
+            <ListHeader>Analytics</ListHeader>
+            <Link href={'https://app.splitbee.io/public/kryptokrona.org'}>Analytics</Link>
+            <Button colorScheme="yellow" >Splitbee</Button>
           </Stack>
 
           <Stack align={'flex-start'}>
@@ -90,6 +89,7 @@ export default function Footer() {
       </Container>
 
       <Box
+        marginTop="2rem"
         borderTopWidth={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.700')}>

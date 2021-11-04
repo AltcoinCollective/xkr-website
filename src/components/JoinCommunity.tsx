@@ -1,16 +1,19 @@
 import { Button } from '@chakra-ui/button'
 import { Box, Center, Container, Stack, Text } from '@chakra-ui/layout'
+import { background } from '@chakra-ui/styled-system'
 import * as React from 'react'
 
 const JoinCommunity = () => {
     return(
         <Container maxW="container.lg">
-            <Text align="center" fontSize="6xl">Join the best community</Text>
-            <Text align="center" fontSize="md">Get the most out of everything</Text>
-            <Stack align="center" direction="row" spacing={2} padding="1rem">
+        <Stack padding="3" marginTop="5">
+                <Text align="center" fontSize="5xl">Join the best community</Text>
+                <Text align="center" fontSize="md">Get the best out of everything</Text>
+            <Stack padding="3" alignSelf="center" direction="row">
                 <Button colorScheme="green">Join Hugin</Button>
-                <Button colorScheme="teal" variant="outline">Join Discord</Button>
+                <Button colorScheme="green" variant="outline">Join Discord</Button>
             </Stack>
+        </Stack>
         </Container>
     )
 }
