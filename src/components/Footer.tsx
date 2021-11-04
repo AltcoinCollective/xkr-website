@@ -1,7 +1,9 @@
 import * as React from 'react'
 import { ReactNode } from 'react';
-import { Button } from '@chakra-ui/button';
+import { Img } from '@chakra-ui/image';
+import { BsGithub } from 'react-icons/bs'
 import {
+  Button,
   Box,
   Container,
   Stack,
@@ -11,6 +13,7 @@ import {
   VisuallyHidden,
   chakra,
   useColorModeValue,
+  Image,
 } from '@chakra-ui/react';
 import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
@@ -61,29 +64,29 @@ export default function Footer() {
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container as={Stack} maxW="7xl" paddingTop="10rem">
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
-          <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
+          <Stack align={'center'}>
+            <ListHeader>Links</ListHeader>
             <Link href={'#'}>About Us</Link>
             <Link href={'#'}>Blog</Link>
             <Link href={'#'}>Careers</Link>
             <Link href={'#'}>Contact Us</Link>
           </Stack>
 
-          <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
+          <Stack align={'center'}>
+            <ListHeader>Community</ListHeader>
             <Link href={'#'}>Help Center</Link>
             <Link href={'#'}>Safety Center</Link>
             <Link href={'#'}>Community Guidelines</Link>
           </Stack>
 
-          <Stack align={'flex-start'}>
+          <Stack align={'center'}>
             <ListHeader>Analytics</ListHeader>
-            <Link href={'https://app.splitbee.io/public/kryptokrona.org'}>Analytics</Link>
-            <Button colorScheme="yellow" >Splitbee</Button>
+            <Link href={'https://app.splitbee.io/public/kryptokrona.org'}><Img src="https://chakra-templates.dev/_next/image?url=https%3A%2F%2Fsplitbee.io%2Fsplitbee-badge.svg&w=256&q=75"/></Link>
           </Stack>
 
-          <Stack align={'flex-start'}>
-            <ListHeader>Install App</ListHeader>
+          <Stack align={'center'}>
+            <ListHeader>Edit Page</ListHeader>
+            <Link href="https://github.com/kryptokrona"><Button colorScheme="purple"><BsGithub size="1.2rem"/><Text padding="3">Github</Text></Button></Link>
           </Stack>
         </SimpleGrid>
       </Container>
@@ -95,13 +98,13 @@ export default function Footer() {
         borderColor={useColorModeValue('gray.200', 'gray.700')}>
         <Container
           as={Stack}
-          maxW={'6xl'}
+          maxW={'7xl'}
           py={4}
           direction={{ base: 'column', md: 'row' }}
           spacing={4}
           justify={{ md: 'space-between' }}
-          align={{ md: 'center' }}>
-          <Text>© 2020 Chakra Templates. All rights reserved</Text>
+          align={{ sm: 'center' }}>
+          <Text>© 2021 Kryptokrona</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />

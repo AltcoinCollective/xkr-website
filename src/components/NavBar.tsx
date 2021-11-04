@@ -16,6 +16,7 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+    Img,
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -34,10 +35,10 @@ import {
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
           py={{ base: 2 }}
-          px={{ base: 4 }}
+          px={{ base: 6 }}
           borderBottom={1}
           borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.900')}
+          borderColor={useColorModeValue('gray.300', 'gray.900')}
           align={'center'}>
           <Flex
             flex={{ base: 1, md: 'auto' }}
@@ -57,7 +58,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              Kryptokrona
+              <Img height="7" src="https://raw.githubusercontent.com/kryptokrona/Styleguide/66d56e5945d9f7a758d8f899f4e00bff5e97fec1/Logo/Black%20-%20logo.svg"></Img>
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
