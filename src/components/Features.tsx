@@ -24,7 +24,7 @@ import {
   export default function Features() {
     return (
       <Box p={4}>
-        <Stack marginTop="20" spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+        <Stack marginTop="20" spacing={4} as={Container} maxW={'3xl'} textAlign={'center'} py="5">
           <Heading fontSize={'3xl'}>This is the headline</Heading>
           <Text color={'gray.600'} fontSize={'xl'}>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -33,7 +33,6 @@ import {
           </Text>
         </Stack>
   
-        <Container maxW={'6xl'} mt={10}>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
             {features.map((feature) => (
               <HStack key={feature.id} align={'top'}>
@@ -47,7 +46,6 @@ import {
               </HStack>
             ))}
           </SimpleGrid>
-        </Container>
       </Box>
     );
   }

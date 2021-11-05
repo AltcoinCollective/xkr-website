@@ -33,13 +33,13 @@ import {
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
-          minH={'60px'}
+          minH='64px'
           py={{ base: 2 }}
           px={{ base: 6 }}
-          borderBottom={1}
-          borderStyle={'solid'}
+          borderBottom="1px"
+          borderStyle="solid"
           borderColor={useColorModeValue('gray.300', 'gray.900')}
-          align={'center'}>
+          align="center">
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
@@ -58,7 +58,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              <Img height="7" src="https://raw.githubusercontent.com/kryptokrona/Styleguide/66d56e5945d9f7a758d8f899f4e00bff5e97fec1/Logo/Black%20-%20logo.svg"></Img>
+              <Link href="/#"><Img height="7" src="https://raw.githubusercontent.com/kryptokrona/Styleguide/66d56e5945d9f7a758d8f899f4e00bff5e97fec1/Logo/Black%20-%20logo.svg"></Img></Link>
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -72,24 +72,28 @@ import {
             direction={'row'}
             spacing={6}>
             <Button
-              as={'a'}
+              display={{ base: 'inline-flex', md: 'none' }}
               fontSize={'sm'}
-              fontWeight={400}
-              variant={'link'}
-              href={'#'}>
-              Sign In
+              variant="link"
+              fontWeight={600}
+              color="gray"
+              href={'#'}
+              _hover={{
+                bg: 'green.300',
+              }}>
+                Buy XKR
             </Button>
             <Button
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'green'}
+              bg="green.500"
               href={'#'}
               _hover={{
-                bg: 'pink.300',
+                bg: 'green.300',
               }}>
-              Sign Up
+              Buy XKR
             </Button>
           </Stack>
         </Flex>
@@ -161,7 +165,7 @@ import {
           <Box>
             <Text
               transition={'all .3s ease'}
-              _groupHover={{ color: 'pink.400' }}
+              _groupHover={{ color: 'gray.500' }}
               fontWeight={500}>
               {label}
             </Text>
@@ -175,7 +179,7 @@ import {
             justify={'flex-end'}
             align={'center'}
             flex={1}>
-            <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+            <Icon color={'gray.500'} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
         </Stack>
       </Link>
@@ -257,13 +261,13 @@ import {
       label: 'Get Started',
       children: [
         {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
+          label: 'Mining',
+          subLabel: 'Lets find some coins!',
           href: '#',
         },
         {
-          label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
+          label: 'Docs',
+          subLabel: 'Interested to learn more?',
           href: '#',
         },
       ],
@@ -272,13 +276,13 @@ import {
       label: 'Download',
       children: [
         {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
+          label: 'Hugin Messenger',
+          subLabel: 'Protect your privacy',
           href: '#',
         },
         {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
+          label: 'Wallet',
+          subLabel: 'Get one of our wallets',
           href: '#',
         },
       ],
@@ -293,6 +297,6 @@ import {
     },
     {
         label: 'Info',
-        href: '#',
+        href: '/info',
       },
   ];

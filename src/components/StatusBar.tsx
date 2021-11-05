@@ -1,7 +1,6 @@
 import * as React from 'react'
 import {
     Box,
-    chakra,
     Flex,
     SimpleGrid,
     Stat,
@@ -10,8 +9,7 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import { ReactNode } from 'react';
-  import { BsPerson } from 'react-icons/bs';
-  import { GoLocation } from 'react-icons/go';
+  import { Heading } from '@chakra-ui/layout';
   import { FaNetworkWired, FaSquare } from 'react-icons/fa';
   import { MdSpeed } from 'react-icons/md';
   import { BiDollar } from 'react-icons/bi'
@@ -29,9 +27,8 @@ import {
       <Stat
         px={{ base: 2, md: 4 }}
         py={'5'}
-        shadow={'xl'}
-        border={'1px solid'}
-        borderColor={useColorModeValue('gray.800', 'gray.500')}
+        border={'2px solid'}
+        borderColor="gray.900"
         rounded={'lg'}>
         <Flex justifyContent={'space-between'}>
           <Box pl={{ base: 2, md: 4 }}>
@@ -71,14 +68,14 @@ import {
         })
 
     return (
-      <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
-        <chakra.h1
+      <Box maxW="7xl" mx={'auto'} pt={10} pb={10} px={{ base: 2, sm: 12, md: 17 }}>
+        <Heading
           textAlign={'center'}
           fontSize={'4xl'}
           py={10}
           fontWeight={'bold'}>
           Quick glance of the network.
-        </chakra.h1>
+        </Heading>
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
           <StatsCard
             title={'Height'}
