@@ -2,8 +2,8 @@ const { DarkMode } = require("@chakra-ui/color-mode");
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "xkr-website",
+    siteUrl: "https://www.kryptokrona.org",
+    title: "Kryptokrona",
   },
   plugins: [
     "gatsby-plugin-sass",
