@@ -59,12 +59,12 @@ const SocialButton = ({
 
 export default function Footer() {
   return (
+   
     <Box
-
       color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW="7xl" paddingTop="5rem">
+      <Container as={Stack} maxW="7xl" paddingTop="5rem" px='8'>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
-          <Stack align={'center'}>
+          <Stack align={'start'}>
             <ListHeader>Links</ListHeader>
             <Link href={'#'}>About Us</Link>
             <Link href={'#'}>Blog</Link>
@@ -72,19 +72,19 @@ export default function Footer() {
             <Link href={'#'}>Contact Us</Link>
           </Stack>
 
-          <Stack align={'center'}>
+          <Stack align={'start'}>
             <ListHeader>Community</ListHeader>
             <Link href={'#'}>Help Center</Link>
             <Link href={'#'}>Safety Center</Link>
             <Link href={'#'}>Community Guidelines</Link>
           </Stack>
 
-          <Stack align={'center'}>
+          <Stack align={'start'}>
             <ListHeader>Analytics</ListHeader>
             <Link href={'https://app.splitbee.io/public/kryptokrona.org'}><Img src="https://chakra-templates.dev/_next/image?url=https%3A%2F%2Fsplitbee.io%2Fsplitbee-badge.svg&w=256&q=75"/></Link>
           </Stack>
 
-          <Stack align={'center'}>
+          <Stack align={'start'}>
             <ListHeader>Edit Page</ListHeader>
             <Link href="https://github.com/kryptokrona"><Button colorScheme="purple"><BsGithub size="1.2rem"/><Text padding="3">Github</Text></Button></Link>
           </Stack>

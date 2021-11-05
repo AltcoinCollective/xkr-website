@@ -17,6 +17,7 @@ import {
     useBreakpointValue,
     useDisclosure,
     Img,
+    Container,
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -30,16 +31,15 @@ import {
   
     return (
       <Box>
+        <Container maxW='7xl'>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
           minH='64px'
           py={{ base: 2 }}
-          px={{ base: 6 }}
-          borderBottom="1px"
-          borderStyle="solid"
-          borderColor={useColorModeValue('gray.300', 'gray.900')}
+          px={{ base: 2 }}
           align="center">
+            
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
@@ -77,10 +77,7 @@ import {
               variant="link"
               fontWeight={600}
               color="gray"
-              href={'#'}
-              _hover={{
-                bg: 'green.300',
-              }}>
+              href={'#'}>
                 Buy XKR
             </Button>
             <Button
@@ -101,6 +98,7 @@ import {
         <Collapse in={isOpen} animateOpacity>
           <MobileNav />
         </Collapse>
+      </Container>  
       </Box>
     );
   }
@@ -289,7 +287,7 @@ import {
     },
     {
       label: 'Hugin',
-      href: '#',
+      href: '/hugin',
     },
     {
       label: 'Community',

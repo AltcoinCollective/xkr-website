@@ -1,6 +1,5 @@
 import * as React from 'react'
 import CTAhugin from '../components/CTAhugin';
-import CTAwallet from '../components/CTAwallet';
 import Features from '../components/Features';
 import Hero from '../components/Hero';
 import JoinCommunity from '../components/CTACommunity';
@@ -12,9 +11,8 @@ const IndexPage = () => {
     <Layout>
       <Hero/>
       <Features/>
-      <CTAhugin/>
       <StatusBar/>
-      <CTAwallet/>
+      <CTAhugin/>
       <JoinCommunity/>
     </Layout>
   )
