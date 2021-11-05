@@ -15,7 +15,7 @@ import {
   useColorModeValue,
   Image,
 } from '@chakra-ui/react';
-import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaDiscord } from 'react-icons/fa';
 
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
@@ -62,7 +62,7 @@ export default function Footer() {
    
     <Box
       color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW="7xl" paddingTop="5rem" px='8'>
+      <Container as={Stack} maxW="7xl" paddingTop="5rem" px='5'>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'start'}>
             <ListHeader>Links</ListHeader>
@@ -105,15 +105,15 @@ export default function Footer() {
           justify={{ md: 'space-between' }}
           align={{ sm: 'center' }}>
           <Text>© 2021 Kryptokrona</Text>
-          <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
+          <Stack direction={'row'} spacing={1}>
+            <SocialButton label={'Twitter'} href={'https://twitter.com/kryptokrona'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
+            <SocialButton label={'TGithub'} href={'https://github.com/kryptokrona'}>
+              <FaGithub />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
-              <FaInstagram />
+            <SocialButton label={'Discord'} href={'https://chat.kryptokrona.se'}>
+              <FaDiscord />
             </SocialButton>
           </Stack>
         </Container>

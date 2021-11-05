@@ -37,7 +37,7 @@ import {
           color={useColorModeValue('gray.600', 'white')}
           minH='64px'
           py={{ base: 2 }}
-          px={{ base: 2 }}
+          px={{ base: 0 }}
           align="center">
             
           <Flex
@@ -77,7 +77,7 @@ import {
               variant="link"
               fontWeight={600}
               color="gray"
-              href={'#'}>
+              href={'/buy.js'}>
                 Buy XKR
             </Button>
             <Button
@@ -85,10 +85,10 @@ import {
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg="green.500"
-              href={'#'}
+              bg="gray.900"
+              href={'/buy.js'}
               _hover={{
-                bg: 'green.300',
+                bg: 'gray.500',
               }}>
               Buy XKR
             </Button>
@@ -158,7 +158,7 @@ import {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+        _hover={{ bg: useColorModeValue('gray.200', 'gray.900') }}>
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text

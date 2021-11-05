@@ -68,10 +68,10 @@ import {
         })
 
     return (
-      <Box maxW="7xl" mx={'auto'} pt={10} pb={10} px={{ base: 2, sm: 12, md: 17 }}>
+      <Box maxW="7xl" mx={'auto'} pb={10} px={{ base: 2, sm: 12, md: 17 }}>
         <Heading
           textAlign={'center'}
-          fontSize={'4xl'}
+          fontSize={'3xl'}
           py={10}
           fontWeight={'bold'}>
           Quick glance of the network.

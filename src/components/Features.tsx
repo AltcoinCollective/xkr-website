@@ -19,9 +19,9 @@ import {
   export default function Features() {
     return (
     <Container maxW='7xl'>
-      <Box p={4}>
-        <Stack marginTop="20" spacing={4} as={Container} maxW={'7xl'} textAlign={'start'} py="5">
-          <Heading fontSize={'3xl'}>Why Kryptokrona?</Heading>
+      <Box>
+        <Stack marginTop="20" spacing={4} as={Container} maxW={'7xl'} textAlign={'center'} py="5">
+          <Heading fontSize={'4xl'}>Why Kryptokrona?</Heading>
           <Text color={'gray.600'} fontSize={'xl'} py='5'>
           The advantages with Kryptokrona compared to the alternatives are many.
           </Text>

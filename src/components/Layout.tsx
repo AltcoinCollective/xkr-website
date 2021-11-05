@@ -1,9 +1,8 @@
-import { Container } from '@chakra-ui/react'
 import * as React from 'react'
 import Footer from './Footer'
 import NavBar from './NavBar'
 
-import './theme/theme.scss'
+import '../theme.scss'
 
 const Layout = (props) => {
     return (

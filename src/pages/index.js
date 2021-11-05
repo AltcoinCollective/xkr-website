@@ -11,8 +11,8 @@ const IndexPage = () => {
     <Layout>
       <Hero/>
       <Features/>
-      <StatusBar/>
       <CTAhugin/>
+      <StatusBar/>
       <JoinCommunity/>
     </Layout>
   )

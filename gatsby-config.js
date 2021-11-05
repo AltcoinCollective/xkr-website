@@ -1,3 +1,5 @@
+const { DarkMode } = require("@chakra-ui/color-mode");
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
