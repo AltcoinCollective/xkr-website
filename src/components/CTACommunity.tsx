@@ -11,8 +11,8 @@ const CTACommunity = () => {
                 <Heading align="center" fontSize="6xl">Join our community</Heading>
                 <Text align="center" fontSize="md">This project is open source and maintained by the Community. You can for example make changes to this site, suggest awesome new features, or help us squash bugs. Not a developer? No worries, there's tons of things to do!</Text>
                 <Stack alignSelf="center" direction="row">
-                <Link href='https://chat.kryptokrona.se' isExternal><Button alignSelf='start'bg='gray.900' color='white' size="lg"_hover={{bg:'gray.500'}}>Join Hugin</Button></Link>
-                <Button colorScheme="black" variant="outline" size="lg">Join Discord</Button>
+                <Link href='/hugin' isExternal><Button alignSelf='start'bg='gray.900' color='white' size="lg"_hover={{bg:'gray.500'}}>Join Hugin</Button></Link>
+                <Link href='https://chat.kryptokrona.se'><Button colorScheme="black" variant="outline" size="lg">Join Discord</Button></Link>
             </Stack>
             <Stack paddingTop="10">
             <Text fontSize="xl" align="center">Contributors</Text>
