@@ -9,6 +9,7 @@ const config = {
   useSystemColorMode: true,
 }
 
+
 // 3. extend the theme
 const theme = extendTheme({ config })
 

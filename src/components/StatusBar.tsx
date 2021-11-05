@@ -28,7 +28,7 @@ import {
         px={{ base: 2, md: 4 }}
         py={'5'}
         border={'2px solid'}
-        borderColor="gray.900"
+        borderColor={useColorModeValue('gray.900', 'white')}
         rounded={'lg'}>
         <Flex justifyContent={'space-between'}>
           <Box pl={{ base: 2, md: 4 }}>
@@ -68,9 +68,9 @@ import {
         })
 
     return (
-      <Box maxW="7xl" mx={'auto'} pb={10} px={{ base: 2, sm: 12, md: 17 }}>
+      <Box maxW="7xl" mx={'auto'} my='10' pb={10} px={{ base: 2, sm: 12, md: 17 }}>
         <Heading
-          textAlign={'center'}
+          textAlign={'start'}
           fontSize={'3xl'}
           py={10}
           fontWeight={'bold'}>

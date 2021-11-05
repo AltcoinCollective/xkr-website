@@ -49,6 +49,7 @@ module.exports = {
          * if false, this plugin will not use <ColorModeProvider />
          */
         isUsingColorMode: true,
+        initialColorMode: "light",
       },
     },
   ],
