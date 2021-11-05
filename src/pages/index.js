@@ -3,7 +3,7 @@ import CTAhugin from '../components/CTAhugin';
 import CTAwallet from '../components/CTAwallet';
 import Features from '../components/Features';
 import Hero from '../components/Hero';
-import JoinCommunity from '../components/JoinCommunity';
+import JoinCommunity from '../components/CTACommunity';
 import Layout from '../components/Layout';
 import StatusBar from '../components/StatusBar';
 
@@ -13,9 +13,9 @@ const IndexPage = () => {
       <Hero/>
       <Features/>
       <CTAhugin/>
+      <StatusBar/>
       <CTAwallet/>
       <JoinCommunity/>
-      <StatusBar/>
     </Layout>
   )
 }
